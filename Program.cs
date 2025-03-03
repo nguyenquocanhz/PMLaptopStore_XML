@@ -16,7 +16,7 @@ namespace PMLaptopStore_XML
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fQuanLySanPham());
+            Application.Run(new fLogin());
         }
     }
 }
