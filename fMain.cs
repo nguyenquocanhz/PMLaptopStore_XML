@@ -11,11 +11,17 @@ using System.Windows.Forms;
 
 namespace PMLaptopStore_XML
 {
-    public partial class fQuanLySanPham: Form
+    public partial class fMain: Form
     {
-        public fQuanLySanPham()
+        public fMain()
         {
             InitializeComponent();
+        }
+        public fMain(string username)
+        {
+            InitializeComponent();
+            label1.Text = "Xin chào " + username;
+
         }
         public void LoadData()
         {
@@ -55,6 +61,12 @@ namespace PMLaptopStore_XML
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
+        }
+
+        private void btnopenHoaDonTT_Click(object sender, EventArgs e)
+        {
+            openChildForm(new fHoaDonThanhToan());
+
         }
     }
 }

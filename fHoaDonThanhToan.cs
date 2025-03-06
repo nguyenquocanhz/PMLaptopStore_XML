@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PMLaptopStore_XML.DBconfig
+namespace PMLaptopStore_XML
 {
-    public partial class fDonHang: Form
+    public partial class fHoaDonThanhToan: Form
     {
-        public fDonHang()
+        public fHoaDonThanhToan()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace PMLaptopStore_XML
 {
-    partial class fQuanLySanPham
+    partial class fMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.sidebarPanel = new System.Windows.Forms.Panel();
-            this.logo_img = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -37,13 +36,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnOpenDonHang = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.logo_img = new System.Windows.Forms.PictureBox();
+            this.btnopenHoaDonTT = new System.Windows.Forms.Button();
             this.sidebarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_img)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_img)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebarPanel
@@ -52,6 +54,7 @@
             this.sidebarPanel.Controls.Add(this.logo_img);
             this.sidebarPanel.Controls.Add(this.button6);
             this.sidebarPanel.Controls.Add(this.button5);
+            this.sidebarPanel.Controls.Add(this.btnopenHoaDonTT);
             this.sidebarPanel.Controls.Add(this.button4);
             this.sidebarPanel.Controls.Add(this.button3);
             this.sidebarPanel.Controls.Add(this.button2);
@@ -62,21 +65,10 @@
             this.sidebarPanel.Size = new System.Drawing.Size(294, 652);
             this.sidebarPanel.TabIndex = 0;
             // 
-            // logo_img
-            // 
-            this.logo_img.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo_img.Image = global::PMLaptopStore_XML.Properties.Resources.logo;
-            this.logo_img.Location = new System.Drawing.Point(0, 0);
-            this.logo_img.Name = "logo_img";
-            this.logo_img.Size = new System.Drawing.Size(294, 226);
-            this.logo_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo_img.TabIndex = 1;
-            this.logo_img.TabStop = false;
-            // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 570);
+            this.button6.Location = new System.Drawing.Point(12, 588);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(270, 52);
             this.button6.TabIndex = 0;
@@ -86,7 +78,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 492);
+            this.button5.Location = new System.Drawing.Point(12, 533);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(270, 52);
             this.button5.TabIndex = 0;
@@ -96,7 +88,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 434);
+            this.button4.Location = new System.Drawing.Point(12, 417);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(270, 52);
             this.button4.TabIndex = 0;
@@ -106,7 +98,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 376);
+            this.button3.Location = new System.Drawing.Point(12, 359);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(270, 52);
             this.button3.TabIndex = 0;
@@ -116,7 +108,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 318);
+            this.button2.Location = new System.Drawing.Point(12, 301);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(270, 52);
             this.button2.TabIndex = 0;
@@ -126,7 +118,7 @@
             // btnOpenDonHang
             // 
             this.btnOpenDonHang.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenDonHang.Location = new System.Drawing.Point(12, 248);
+            this.btnOpenDonHang.Location = new System.Drawing.Point(12, 231);
             this.btnOpenDonHang.Name = "btnOpenDonHang";
             this.btnOpenDonHang.Size = new System.Drawing.Size(270, 64);
             this.btnOpenDonHang.TabIndex = 0;
@@ -145,9 +137,18 @@
             this.panel2.Size = new System.Drawing.Size(796, 652);
             this.panel2.TabIndex = 1;
             // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 84);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(796, 568);
+            this.panel3.TabIndex = 2;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,20 +160,44 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Home";
             // 
-            // panel3
+            // label3
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 84);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(796, 568);
-            this.panel3.TabIndex = 2;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(507, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 22);
+            this.label3.TabIndex = 2;
+            // 
+            // logo_img
+            // 
+            this.logo_img.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logo_img.Image = global::PMLaptopStore_XML.Properties.Resources.logo;
+            this.logo_img.Location = new System.Drawing.Point(0, 0);
+            this.logo_img.Name = "logo_img";
+            this.logo_img.Size = new System.Drawing.Size(294, 195);
+            this.logo_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo_img.TabIndex = 1;
+            this.logo_img.TabStop = false;
+            // 
+            // btnopenHoaDonTT
+            // 
+            this.btnopenHoaDonTT.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnopenHoaDonTT.Location = new System.Drawing.Point(12, 475);
+            this.btnopenHoaDonTT.Name = "btnopenHoaDonTT";
+            this.btnopenHoaDonTT.Size = new System.Drawing.Size(270, 52);
+            this.btnopenHoaDonTT.TabIndex = 0;
+            this.btnopenHoaDonTT.Text = "Quản Lý Hóa Đơn";
+            this.btnopenHoaDonTT.UseVisualStyleBackColor = true;
+            this.btnopenHoaDonTT.Click += new System.EventHandler(this.btnopenHoaDonTT_Click);
             // 
             // fQuanLySanPham
             // 
@@ -186,10 +211,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fQuanLySanPham";
             this.sidebarPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logo_img)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_img)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,5 +233,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnopenHoaDonTT;
     }
 }

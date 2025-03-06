@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sanphams>
+	<sanpham ma="SP001">
+		<tensp>Asus Zenbook UX433FA-A6061T</tensp>
+		<soluong>10</soluong>
+		<dongia>23990000</dongia>
+		<baohanh>24 thang</baohanh>
+		<ngaynhap>2020-01-01</ngaynhap>
+		<loaisp>Ultrabook</loaisp>
+		<manhinh>14 inch</manhinh>
+		<cpu>Intel Core i5-10210U</cpu>
+		<ram>8GB</ram>
+		<ssd>256GB</ssd>
+		<hdd>Khong</hdd>
+		<cardmanhinh>Intel UHD Graphics 620</cardmanhinh>
+		<ketnoi>USB 3.1, HDMI, Bluetooth 5.0, Wifi 6</ketnoi>
+		<heodien>Windows 10 Home</heodien>
+		<anh>Images/Asus Zenbook UX433FA-A6061T.jpg</anh>
+	</sanpham>
+	<sanpham ma="SP002">
+		<tensp>HP Pavilion 15-cs3006TU</tensp>
+		<soluong>5</soluong>
+		<dongia>15990000</dongia>
+		<baohanh>12 thang</baohanh>
+		<ngaynhap>2020-01-01</ngaynhap>
+		<loaisp>Laptop van phong</loaisp>
+		<manhinh>15.6 inch</manhinh>
+		<cpu>Intel Core i3-1005G1</cpu>
+		<ram>4GB</ram>
+		<ssd>256GB</ssd>
+		<hdd>Khong</hdd>
+		<cardmanhinh>Intel UHD Graphics</cardmanhinh>
+		<ketnoi>USB 3.1, HDMI, Bluetooth 4.2, Wifi 5</ketnoi>
+		<heodien>Windows 10 Home</heodien>
+		<anh>Images/HP Pavilion 15-cs3006TU.jpg</anh>
+	</sanpham>
+	<sanpham ma="SP003">
+		<tensp>Lenovo ThinkPad E490</tensp>
+		<soluong>7</soluong>
+		<dongia>17990000</dongia>
+		<baohanh>12 thang</baohanh>
+		<ngaynhap>2020-01-01</ngaynhap>
+		<loaisp>Laptop van phong</loaisp>
+		<manhinh>14 inch</manhinh>
+		<cpu>Intel Core i5-8265U</cpu>
+		<ram>8GB</ram>
+		<ssd>256GB</ssd>
+		<hdd>Khong</hdd>
+		<cardmanhinh>Intel UHD Graphics 620</cardmanhinh>
+		<ketnoi>USB 3.1, HDMI, Bluetooth 5.0, Wifi 5</ketnoi>
+		<heodien>Windows 10 Pro</heodien>
+		<anh>Images/Lenovo ThinkPad E490.jpg</anh>
+	</sanpham>
+	<sanpham ma="SP004">
+		<tensp>MSI GF63 Thin 9SCSR-1069VN</tensp>
+		<soluong>3</soluong>
+		<gianhap>15000000</gianhap>
+		<giaban>23990000</giaban>
+		<baohanh>12 thang</baohanh>
+		<ngaynhap>2020-01-01</ngaynhap>
+		<loaisp>Laptop Gaming</loaisp>
+		<manhinh>15.6 inch</manhinh>
+		<cpu>Intel Core i5-9300H</cpu>
+		<ram>8GB</ram>
+		<ssd>512GB</ssd>
+		<hdd>Khong</hdd>
+		<cardmanhinh>NVIDIA GeForce GTX 1650 Max-Q</cardmanhinh>
+		<ketnoi>USB 3.1, HDMI, Bluetooth 5.0, Wifi 5</ketnoi>
+		<heodien>Windows 10 Home</heodien>
+		<anh>Images/MSI GF63 Thin 9SCSR-1069VN.jpg</anh>
+	</sanpham>
+</sanphams>

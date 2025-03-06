@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nhanviens>
+	<nhanvien ma="NV001">
+		<thongtin>
+			<hovaten>Nguyen Van A</hovaten>
+			<ngaysinh>1990-05-20</ngaysinh>
+			<sodienthoai>0123456789</sodienthoai>
+			<chucvu>Quan ly</chucvu>
+			<phongban>Kinh doanh</phongban>
+			<ngaytuyendung>2015-08-01</ngaytuyendung>
+			<info>admin|anhanh123|admin</info>
+		</thongtin>
+	</nhanvien>
+	<!-- Thong tin cac nhan vien khac -->
+</nhanviens>
+

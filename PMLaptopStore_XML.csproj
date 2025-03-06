@@ -46,10 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBconfig\fDonHang.cs">
+    <Compile Include="fHoaDonThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DBconfig\fDonHang.Designer.cs">
+    <Compile Include="fHoaDonThanhToan.Designer.cs">
+      <DependentUpon>fHoaDonThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DanhMuc.cs" />
+    <Compile Include="Models\DanhSachTaiKhoan.cs" />
+    <Compile Include="Models\ListDanhMuc.cs" />
+    <Compile Include="DB\DataAccess.cs" />
+    <Compile Include="DB\DataProvider.cs" />
+    <Compile Include="fDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonHang.Designer.cs">
       <DependentUpon>fDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="fLogin.cs">
@@ -58,22 +69,31 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fQuanLySanPham.cs">
+    <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fQuanLySanPham.Designer.cs">
-      <DependentUpon>fQuanLySanPham.cs</DependentUpon>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Helpers.cs" />
+    <Compile Include="Models\ListNhanVien.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\TaiKhoan.cs" />
+    <Compile Include="Models\XmlHelper.cs" />
+    <Compile Include="Models\SanPham.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DBconfig\fDonHang.resx">
+    <EmbeddedResource Include="fDonHang.resx">
       <DependentUpon>fDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDonThanhToan.resx">
+      <DependentUpon>fHoaDonThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fQuanLySanPham.resx">
-      <DependentUpon>fQuanLySanPham.cs</DependentUpon>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,10 +120,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Design\" />
-    <Folder Include="Models\" />
+    <Folder Include="Images\Products\" />
+    <Folder Include="report\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataXML\DanhMuc.xml" />
+    <Content Include="DataXML\DonHang.xml" />
+    <Content Include="DataXML\NhanVien.xml" />
+    <Content Include="DataXML\SanPham.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
