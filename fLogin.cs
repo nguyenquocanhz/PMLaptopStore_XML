@@ -16,14 +16,13 @@ namespace PMLaptopStore_XML
         public fLogin()
         {
             InitializeComponent();
-            btnExit.Click += btnExit_Click;
             btnLogin.Click += btnLogin_Click;
         }
 
         private void cShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = cShowPassword.Checked ? '\0' : '*';
-        }
+        } 
         // check login
         private void btnLogin_Click(object sender, EventArgs e)
         {
