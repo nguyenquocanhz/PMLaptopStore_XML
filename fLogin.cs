@@ -8,14 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace PMLaptopStore_XML
 {
-    public partial class fLogin: Form
+    public partial class fLogin : Form
     {
         public fLogin()
         {
             InitializeComponent();
+            try
+            {
+                NhanVien nv = new NhanVien();
+                nv.DocDanhSachNhanVien();
+            }
+            catch 
+            {
+                MessageBox.Show("Lỗi không xác định !");
+            }
             btnLogin.Click += btnLogin_Click;
         }
 
@@ -30,8 +40,13 @@ namespace PMLaptopStore_XML
             string password = txtPassword.Text;
             // read xml file to get username and password
 
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            if (DanhSachTaiKhoan.Instance.KiemTraTK(username,password))
+            if (DanhSachTaiKhoan.Instance.KiemTraTK(username, password))
             {
 
                 Helpers.ShowMessageBox("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -39,6 +54,8 @@ namespace PMLaptopStore_XML
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
+
+
             }
             else
             {
@@ -46,14 +63,19 @@ namespace PMLaptopStore_XML
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-                Application.Exit();
-            else
-                return;
-        }
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát chương trình?",
+                "Xác nhận thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

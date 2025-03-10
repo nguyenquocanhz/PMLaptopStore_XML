@@ -52,9 +52,14 @@
     <Compile Include="fHoaDonThanhToan.Designer.cs">
       <DependentUpon>fHoaDonThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\DanhMuc.cs" />
+    <Compile Include="FQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuanLyNhanVien.Designer.cs">
+      <DependentUpon>FQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DanhSachNhanVien.cs" />
     <Compile Include="Models\DanhSachTaiKhoan.cs" />
-    <Compile Include="Models\ListDanhMuc.cs" />
     <Compile Include="DB\DataAccess.cs" />
     <Compile Include="DB\DataProvider.cs" />
     <Compile Include="fDonHang.cs">
@@ -75,8 +80,8 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\DonHang.cs" />
     <Compile Include="Models\Helpers.cs" />
-    <Compile Include="Models\ListNhanVien.cs" />
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\TaiKhoan.cs" />
     <Compile Include="Models\XmlHelper.cs" />
@@ -94,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuanLyNhanVien.resx">
+      <DependentUpon>FQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,18 +127,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Design\" />
     <Folder Include="Images\Products\" />
-    <Folder Include="report\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DataXML\DanhMuc.xml" />
-    <Content Include="DataXML\DonHang.xml" />
-    <Content Include="DataXML\NhanVien.xml" />
-    <Content Include="DataXML\SanPham.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

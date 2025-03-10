@@ -13,7 +13,7 @@ namespace PMLaptopStore_XML.Models
         private string _quyenhan;
         private static DanhSachTaiKhoan instance;
 
-        private List<TaiKhoan> listTaiKhoan = new List<TaiKhoan>();
+        private List<TaiKhoan> listTaiKhoan;
 
         public static DanhSachTaiKhoan Instance
         {
@@ -108,20 +108,25 @@ namespace PMLaptopStore_XML.Models
 
         public void ReadAccountFromXML()
         {
-            string pathTaikhoan = @"I:\LapTrinhWindowForm\PMLaptopStore_XML\PMLaptopStore_XML\DataXML\NhanVien.xml";
-            List<string> list = XmlHelpers.Instance.GetAllNodeValues(pathTaikhoan, "info");
-            
-            foreach (string item in list)
+            try
             {
-                string[] arr = item.Split('|');
-                string username = arr[0];
-                string password = arr[1];
-                string quyenhan = arr[2];
-                TaiKhoan tk = new TaiKhoan(username, password, quyenhan);
-                listTaiKhoan.Add(tk);
+                NhanVien nhanVien = new NhanVien();
 
-            
+                List<NhanVien> list = nhanVien.DocDanhSachNhanVien();
+                listTaiKhoan = new List<TaiKhoan>();
+
+                foreach (NhanVien item in list)
+                {
+                      TaiKhoan tk = new TaiKhoan(item.TaiKhoan ,item.MatKhau ,item.VaiTro);
+                      listTaiKhoan.Add(tk);
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi đọc danh sách nhân viên: {ex.Message}");
+            }
+
+
         }
     }
 }
