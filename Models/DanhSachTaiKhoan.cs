@@ -110,6 +110,7 @@ namespace PMLaptopStore_XML.Models
         {
             string pathTaikhoan = @"I:\LapTrinhWindowForm\PMLaptopStore_XML\PMLaptopStore_XML\DataXML\NhanVien.xml";
             List<string> list = XmlHelpers.Instance.GetAllNodeValues(pathTaikhoan, "info");
+            
             foreach (string item in list)
             {
                 string[] arr = item.Split('|');

@@ -8,7 +8,9 @@
 			<chucvu>Quan ly</chucvu>
 			<phongban>Kinh doanh</phongban>
 			<ngaytuyendung>2015-08-01</ngaytuyendung>
-			<info>admin|anhanh123|admin</info>
+			<username>nguyenquocanh</username>
+			<password>anhanh123</password>
+			<role>admin</role>
 		</thongtin>
 	</nhanvien>
 	<!-- Thong tin cac nhan vien khac -->
